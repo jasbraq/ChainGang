@@ -1,9 +1,9 @@
-body
-{
-	margin: 0;
-	padding: 0;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@@ -2,13 +2,6 @@ body
+				 {
+					 margin: 0;
+					 padding: 0;
+					 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				 }
 
 .Container
 {
@@ -12,51 +12,56 @@ body
 }
 
 .Header
-{
-	width: 100%;
-	height: 100px;
-	margin: auto;
-	border: 1px solid black;
-	display: flex;
+@ -17,13 +10,12 @@ body
+				   height: 100px;
+margin: auto;
+border: 1px solid black;
+display: flex;
 }
 
 .Logo
 {
+	padding-left: 10%;
 	float: left;
 	height: 100%;
 }
 
 .Foto
-{
-	margin-top: 10px;
-	width: 125px;
-	height: 75px;
-}
+@ -35,188 +27,67 @@ body
 
-.Zoek
-{
-	width: auto;
-}
+					.Zoek
+					{
+						width: auto;
+						float: left;
+					}
 
 .ZoekBalk
+.Form
 {
 	width: 400px;
 	border-radius: 2px;
 	font-size: 22px;
 	margin-top: 1px;
 	border: 1px solid gray;
+	margin-top: 10px;
+	margin-left: 20px;
 }
 
 .Button
+.ZoekBalk
 {
 	background-color: #199ed8;
+	width: 900px;
+	border-radius: 4px;
 	font-size: 22px;
 	border: 0;
 	border-radius: 2px;
+	margin-top: 1px;
 }
 
 
 .HeaderList
+.Button
 {
 	margin: 0;
 	padding: 0;
@@ -64,12 +69,23 @@ body
 	margin-top: 20px;
 
 	list-style-type: none;
+	font-size: 20px;
+	border-color: #FF9900;
+	background-color: #FF9900;
+	margin-top: -5px;
+	width: 25px;
+	height: 30px;
 }
 
 .HeaderList li
+li
 {
+	margin-top: 10px;
+	margin-left: 20px;
 	float: left;
 	margin-right: 10px;
+	list-style: none;
+	font-size: 20px;
 }
 
 /*Start css footer*/
@@ -77,9 +93,12 @@ body
 .Footer
 {
 	width: 100%;
+	width: 70%;
 	height: 125px;
 	border-top: 1px solid black;
+	border: 1px solid black;
 	margin: auto;
+	background-color: #006aff;
 }
 
 .Footer table
@@ -91,7 +110,7 @@ body
 .Footer td
 {
 	vertical-align: middle;
-	text-align: center; 
+	text-align: center;
 }
 
 .Footer thead
@@ -141,49 +160,50 @@ a.info
 
 .third-level-menu
 {
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+	position: absolute;
+	top: 0;
+	right: -150px;
+	width: 150px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: none;
 }
 
 .third-level-menu > li
 {
-    height: 30px;
-	background: rgb(241, 241, 241);	
+	height: 30px;
+	background: rgb(241, 241, 241);
 }
 .third-level-menu > li:hover { background: #199ed8; }
 
 .second-level-menu
 {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 150px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 	display: none;
 }
 
 .second-level-menu > li
 {
-    position: relative;
+	position: relative;
 	height: 30px;
-	background: rgb(241, 241, 241);	
+	background: rgb(241, 241, 241);
 }
 .second-level-menu > li:hover { background: #199ed8; }
 
 .top-level-menu
+.Tabel
 {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 	margin: 0;
-	margin-top: 20px;	
+	margin-top: 20px;
 }
 
 .top-level-menu:hover
@@ -192,31 +212,38 @@ a.info
 
 .top-level-menu > li
 {
-    position: relative;
-    float: left;
-    height: 30px;
+	position: relative;
+	float: left;
+	height: 30px;
 	width: 150px;
+	float: left;
+	border-right: 1px solid black;
+	margin-left: 5%;
 }
 .top-level-menu > li:hover { background: #199ed8; }
 
 .top-level-menu li:hover > ul
+th
 {
-    /* On hover, display the next level's menu */
-    display: inline;
+	/* On hover, display the next level's menu */
+	display: inline;
+	text-align: left;
 }
 
 
 /* Menu Link Styles */
 
 .top-level-menu a /* Apply to all links inside the multi-level menu */
+table
 {
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: black;
-    text-decoration: none;
-    padding: 0 0 0 10px;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+	padding: 0 0 0 10px;
 
-    /* Make the link cover the entire list item-container */
-    display: block;
+	/* Make the link cover the entire list item-container */
+	display: block;
 	line-height: 30px;
+	width: 200px;
 }
 .top-level-menu a:hover { color: #000000; }
