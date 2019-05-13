@@ -1,22 +1,22 @@
-@@ -2,13 +2,6 @@ body
-				 {
-					 margin: 0;
-					 padding: 0;
-					 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				 }
 
-.Container
+body
 {
-	width: 1100px;
-	margin: auto;
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Container {
+	argin: auto;
+	padding: 0;
 }
 
 .Header
-@ -17,13 +10,12 @@ body
-				   height: 100px;
-margin: auto;
-border: 1px solid black;
-display: flex;
+{
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	border: 1px solid black;
 }
 
 .Logo
@@ -27,17 +27,19 @@ display: flex;
 }
 
 .Foto
-@ -35,188 +27,67 @@ body
-
-					.Zoek
-					{
-						width: auto;
-						float: left;
-					}
-
-.ZoekBalk
-.Form
 {
+	margin-top: 10px;
+	width: 125px;
+	height: 75px;
+}
+
+.Zoek
+{
+	width: auto;
+	float: left;
+}
+
+.Form {
 	width: 400px;
 	border-radius: 2px;
 	font-size: 22px;
@@ -46,8 +48,6 @@ display: flex;
 	margin-top: 10px;
 	margin-left: 20px;
 }
-
-.Button
 .ZoekBalk
 {
 	background-color: #199ed8;
@@ -58,17 +58,18 @@ display: flex;
 	border-radius: 2px;
 	margin-top: 1px;
 }
-
-
 .HeaderList
-.Button
-{
+ {
 	margin: 0;
 	padding: 0;
 	height: 40px;
 	margin-top: 20px;
 
 	list-style-type: none;
+}
+.Button
+{
+
 	font-size: 20px;
 	border-color: #FF9900;
 	background-color: #FF9900;
@@ -77,7 +78,6 @@ display: flex;
 	height: 30px;
 }
 
-.HeaderList li
 li
 {
 	margin-top: 10px;
@@ -88,19 +88,36 @@ li
 	font-size: 20px;
 }
 
+.HeaderList li {
+	margin-top: 10px;
+}
 /*Start css footer*/
 
 .Footer
 {
 	width: 100%;
-	width: 70%;
 	height: 125px;
 	border-top: 1px solid black;
-	border: 1px solid black;
 	margin: auto;
 	background-color: #006aff;
 }
 
+.Tabel
+{
+	float: left;
+	border-right: 1px solid black;
+	margin-left: 5%;
+}
+
+th
+{
+	text-align: left;
+}
+
+table
+{
+	width: 200px;
+}
 .Footer table
 {
 	width:  100%;
